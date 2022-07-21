@@ -4,6 +4,7 @@
     --sous-titre: #FFD35B;
     --clair: #A8E8F9;
     --foncé: #013C58;
+    --très-foncé: #031226;
 }
 
 
@@ -11,14 +12,27 @@
 body {
     background-color: var(--background);
     font-family: 'bitter' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 80vw;
-    margin:auto;
+    
+}
+
+h2.Passion {
+    font-family: 'bitter' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content {
+    max-width: 70vw;
+    display: block;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* ------------ COULEURS ET TAILLES DE POLICE--------- */
 
-h1,
-h5 {
+h1 {
     color: var(--titre);
 }
 
@@ -29,42 +43,95 @@ h4 {
 
 h3 {
     color: var(--titre);
+    text-transform: uppercase;
+}
+
+h5 {
+    color: var(--foncé)
 }
 
 .Présentation__id {
-    color: var (--clair);
+    color: var(--clair);
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 12vh;
     font-weight: bolder;
 }
 
 h2,
+h2,
 h3,
 h4 {
-    font-size: large;
+    font-size: 5vh;
     font-weight: bold;
 }
 
+h2.Coordonnées__titre,
+h2.Passion {
+    color: var(--très-foncé);
+}
+
+section.Présentation p {
+    line-height: 4vh;
+}
 
 /* -----------------MISE EN PAGE HEADER-------------------- */
 
-.Présentation {
-    display: flex;
-    flex-wrap: wrap;
+header.Présentation {
+    /* display: flex;
+    flex-wrap: wrap; */
+    background-color: var(--foncé);
+    position: relative;
+    padding: 4vh;
 }
 
-.Présentation__id {
-    
+section.Présentation {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 70vw;
+}
+
+.Présentation__Nom {
+    width: 60vw;
+    Padding: 3rem 6rem;
+}
+
+.Présentation__id,
+.Présentation__Coordonnées {
+    font-size: 4vh;
+    background-color: var(--clair);
+    padding: .7vh 3vw;
+    color: var(--très-foncé);
+    width: 30%;
+    height: 20%;
+    border-radius: 3%;
 }
 
 img.Présentation__photo {
-    width: 12rem;
+    width: 30vh;
+    border: 3vh solid var(--très-foncé);
+    position: absolute;
+    top: 2vh;
+    right: 2vh;
+
 }
 
 /* -----------------MISE EN PAGE SECTION PRO----------------------  */
 
 
+
 /* --------------------MISE EN PAGE SECTION PASSION---------------- */
 
+img.Passion__Perso {
+    width: 7rem;
+}
+
+.Passion {
+    background-color: var(--clair);
+    height: fit-content;
+    padding: 2vh;
+    margin-top: 4vh;
+    margin-right: 2vh;
+    border-radius: 3%;
+}
