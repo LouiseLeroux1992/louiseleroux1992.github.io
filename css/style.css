@@ -1,0 +1,70 @@
+:root {
+    --background: #00537A;
+    --titre: #F5A201;
+    --sous-titre: #FFD35B;
+    --clair: #A8E8F9;
+    --foncé: #013C58;
+}
+
+
+
+body {
+    background-color: var(--background);
+    font-family: 'bitter' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 80vw;
+    margin:auto;
+}
+
+/* ------------ COULEURS ET TAILLES DE POLICE--------- */
+
+h1,
+h5 {
+    color: var(--titre);
+}
+
+h2,
+h4 {
+    color: var(--sous-titre);
+}
+
+h3 {
+    color: var(--titre);
+}
+
+.Présentation__id {
+    color: var (--clair);
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+h2,
+h3,
+h4 {
+    font-size: large;
+    font-weight: bold;
+}
+
+
+/* -----------------MISE EN PAGE HEADER-------------------- */
+
+.Présentation {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Présentation__id {
+    
+}
+
+img.Présentation__photo {
+    width: 12rem;
+}
+
+/* -----------------MISE EN PAGE SECTION PRO----------------------  */
+
+
+/* --------------------MISE EN PAGE SECTION PASSION---------------- */
+
