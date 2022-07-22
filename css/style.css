@@ -1,10 +1,19 @@
-:root {
+/* :root {
     --background: #00537A;
     --titre: #F5A201;
     --sous-titre: #FFD35B;
     --clair: #A8E8F9;
     --foncé: #013C58;
     --très-foncé: #031226;
+} */
+
+:root {
+    --background: #468FAF;
+    --titre: #faf9f9;
+    --sous-titre: #013A63;
+    --clair: #A9D6E5;
+    --foncé: #013A63;
+    --très-foncé: #00171F;
 }
 
 
@@ -12,15 +21,14 @@
 body {
     background-color: var(--background);
     font-family: 'bitter' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-}
+    color: var(--clair);
+    font-size: 3vh;
+    text-align: justify;
 
-h2.Passion {
-    font-family: 'bitter' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .content {
-    max-width: 70vw;
+    max-width: 75vw;
     display: block;
     margin: auto;
 }
@@ -28,12 +36,22 @@ h2.Passion {
 main {
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 4vh;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 2vh;
+    margin-bottom: 7vh;
 }
+
 
 /* ------------ COULEURS ET TAILLES DE POLICE--------- */
 
 h1 {
     color: var(--titre);
+}
+
+h2.Passion {
+    font-family: 'bitter' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h2,
@@ -47,65 +65,110 @@ h3 {
 }
 
 h5 {
-    color: var(--foncé)
+    color: var(--foncé);
+    font-size: 3.3vh;
+    margin-bottom: 1vh;
 }
 
 .Présentation__id {
     color: var(--clair);
 }
 
-h1 {
-    font-size: 12vh;
-    font-weight: bolder;
-}
-
-h2,
 h2,
 h3,
 h4 {
-    font-size: 5vh;
+    font-size: 4vh;
     font-weight: bold;
+    text-justify: none;
 }
+
+h2,
+h4 {
+    border-bottom: 0.2vh solid var(--sous-titre);
+}
+
+h3 {
+    border-bottom: 0.3vh solid var(--titre);
+}
+
 
 h2.Coordonnées__titre,
 h2.Passion {
     color: var(--très-foncé);
+    text-justify: none;
 }
 
 section.Présentation p {
     line-height: 4vh;
 }
 
+p {
+    margin: 0;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+main strong {
+    color: var(--titre);
+}
+
 /* -----------------MISE EN PAGE HEADER-------------------- */
 
 header.Présentation {
-    /* display: flex;
-    flex-wrap: wrap; */
     background-color: var(--foncé);
     position: relative;
     padding: 4vh;
+    height: 40vh;
 }
 
 section.Présentation {
+    position: absolute;
+    left: 2vw;
+    bottom: 5vh;
     display: flex;
     justify-content: space-evenly;
-    max-width: 70vw;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    width: 46vw;
+    max-height: 30vh;
 }
 
 .Présentation__Nom {
-    width: 60vw;
-    Padding: 3rem 6rem;
+    width: 40vw;
+    margin: 0;
+    position: absolute;
+    top: 7.5vh;
+    left: 3.7vw;
+}
+
+h1.Présentation__Nom {
+    font-size: 10vh;
+    font-weight: bolder;
 }
 
 .Présentation__id,
 .Présentation__Coordonnées {
-    font-size: 4vh;
+    font-size: 2.5vh;
     background-color: var(--clair);
-    padding: .7vh 3vw;
+    padding: 0.5vh 1vw;
     color: var(--très-foncé);
-    width: 30%;
-    height: 20%;
-    border-radius: 3%;
+    width: 40%;
+    height: 10%;
+    border: 0.2vh solid var(--très-foncé);
+}
+
+div.Présentation__id > p,
+div.Présentation__Coordonnées > p {
+    line-height: 2.7vh;
+    text-justify: initial;
+}
+
+h2.Coordonnées__titre {
+    font-size: 4vh;
+    margin: 0.4vh 0 0.3vh;
+    border: none;
 }
 
 img.Présentation__photo {
@@ -119,19 +182,89 @@ img.Présentation__photo {
 
 /* -----------------MISE EN PAGE SECTION PRO----------------------  */
 
-
+.Profession {
+    width: 60%;
+}
 
 /* --------------------MISE EN PAGE SECTION PASSION---------------- */
 
-img.Passion__Perso {
+img.Passion__Images {
     width: 7rem;
 }
 
-.Passion {
+img.Passion__Images:hover {
+    transform: scale(3);
+    transition-duration: 1.2s;
+}
+
+.Passion__Images {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.2vh;
+}
+
+a.Passion__Perso,
+a.Passion__labo {
+    color: var(--foncé);
+    /* text-decoration: none; */
+    font-weight: bold;
+}
+
+a:hover {
+    text-shadow: 1px var(--titre);
+    color : var(--très-foncé);
+}
+
+aside.Passion {
     background-color: var(--clair);
+    color: var(--très-foncé);
+    width: 30%;
     height: fit-content;
+    padding: 3vh;
+    border: .5vh solid var(--très-foncé);
+}
+
+h2.Passion {
+    font-size: 6.5vh;
+    border-bottom: none;
+    font-family: initial;
+    line-height: 5.3vh;
+    margin-top: 2vh;
+}
+
+em.Passion {
+    font-size: 5vh;
+    font-style: normal;
+}
+
+
+aside.Passion p {
+    font-size: 2.78vh;
     padding: 2vh;
-    margin-top: 4vh;
-    margin-right: 2vh;
-    border-radius: 3%;
+    line-height: 3.2vh;
+}
+
+h5.Passion__Perso {
+    margin-top: 1.3vh;
+}
+
+h5 {
+    text-transform: uppercase;
+}
+
+
+/* --------------------RESPONSIVE---------------------- */
+
+@media (max-width: 1250px) {
+    main {
+        display: block;
+    }
+    .Profession {
+        width:100%;
+        margin: 0;
+    }
+    aside.Passion {
+        width:100%;
+        margin: 0;
+    }
 }
