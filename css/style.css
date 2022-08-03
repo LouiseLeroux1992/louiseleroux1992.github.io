@@ -8,12 +8,14 @@
 } */
 
 :root {
-    --background: #468FAF;
-    --titre: #faf9f9;
-    --sous-titre: #013A63;
-    --clair: #A9D6E5;
-    --foncé: #013A63;
-    --très-foncé: #00171F;
+    --blanc: #fff;
+    --background: #daf4ff;
+    --titre: #3d5cb2;
+    --sous-titre: #0c437c;
+    --texte: #315da5;
+    --clair: #c8dfff;
+    --foncé: #082956;
+    --très-foncé: #021526;
 }
 
 
@@ -28,7 +30,7 @@ body {
 }
 
 .content {
-    max-width: 75vw;
+    max-width: 80vw;
     display: block;
     margin: auto;
 }
@@ -48,6 +50,7 @@ main {
 
 h1 {
     color: var(--titre);
+    
 }
 
 h2.Passion {
@@ -59,8 +62,16 @@ h4 {
     color: var(--sous-titre);
 }
 
+h4 {
+    margin-bottom: 2vh;
+}
+
 h3 {
-    color: var(--titre);
+    font-size: 4vh;
+    background-color: var(--titre);
+    color: var(--background);
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0.6vh 2vh;
     text-transform: uppercase;
 }
 
@@ -75,7 +86,6 @@ h5 {
 }
 
 h2,
-h3,
 h4 {
     font-size: 4vh;
     font-weight: bold;
@@ -87,9 +97,7 @@ h4 {
     border-bottom: 0.2vh solid var(--sous-titre);
 }
 
-h3 {
-    border-bottom: 0.3vh solid var(--titre);
-}
+
 
 
 h2.Coordonnées__titre,
@@ -102,8 +110,10 @@ section.Présentation p {
     line-height: 4vh;
 }
 
-p {
+p,
+li {
     margin: 0;
+    color: var(--texte);
 }
 
 strong {
@@ -111,7 +121,7 @@ strong {
 }
 
 main strong {
-    color: var(--titre);
+    color: var(--foncé);
 }
 
 /* -----------------MISE EN PAGE HEADER-------------------- */
@@ -120,55 +130,7 @@ header.Présentation {
     background-color: var(--foncé);
     position: relative;
     padding: 4vh;
-    height: 40vh;
-}
-
-section.Présentation {
-    position: absolute;
-    left: 2vw;
-    bottom: 5vh;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    width: 46vw;
-    max-height: 30vh;
-}
-
-.Présentation__Nom {
-    width: 40vw;
-    margin: 0;
-    position: absolute;
-    top: 7.5vh;
-    left: 3.7vw;
-}
-
-h1.Présentation__Nom {
-    font-size: 10vh;
-    font-weight: bolder;
-}
-
-.Présentation__id,
-.Présentation__Coordonnées {
-    font-size: 2.5vh;
-    background-color: var(--clair);
-    padding: 0.5vh 1vw;
-    color: var(--très-foncé);
-    width: 40%;
-    height: 10%;
-    border: 0.2vh solid var(--très-foncé);
-}
-
-div.Présentation__id > p,
-div.Présentation__Coordonnées > p {
-    line-height: 2.7vh;
-    text-justify: initial;
-}
-
-h2.Coordonnées__titre {
-    font-size: 4vh;
-    margin: 0.4vh 0 0.3vh;
-    border: none;
+    height: 31vh;
 }
 
 img.Présentation__photo {
@@ -180,11 +142,102 @@ img.Présentation__photo {
 
 }
 
+.Présentation__Nom {
+    width: 40vw;
+    margin: 0;
+    position: absolute;
+    top: 7.5vh;
+    left: 3.7vw;
+    color: var(--background);
+}
+
+h1.Présentation__Nom {
+    font-size: 10vh;
+    font-weight: bolder;
+}
+
+.Navigation{
+    width: 70%;
+    position: absolute;
+    bottom: 1vh;
+    left: 1vh;
+}
+
+.Navigation__Liste{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Navigation__Item{
+    list-style-type:none;
+    color: var(--très-foncé);
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: var(--clair);
+    padding: 0.6vh 1.5vh;
+    border: 2px solid var(--très-foncé);
+}
+
+.Navigation__Lien {
+    text-decoration: none;
+}
+
+.Navigation__Item:hover {
+    background-color: var(--très-foncé);
+    color: var(--background);
+    transform: ;
+}
+
+.Présentation__Nom:hover {
+    color: var(--blanc);
+}
+
+/* section.Présentation {
+    position: absolute;
+    left: 2vw;
+    bottom: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    width: 46vw;
+    max-height: 30vh;
+} */
+
+/* .Présentation__id,
+.Présentation__Coordonnées {
+    font-size: 2.5vh;
+    background-color: var(--clair);
+    padding: 0.5vh 1vw;
+    color: var(--très-foncé);
+    width: 40%;
+    height: 10%;
+    border: 0.2vh solid var(--très-foncé);
+} */
+
+/* div.Présentation__id > p,
+div.Présentation__Coordonnées > p {
+    line-height: 2.7vh;
+    text-justify: initial;
+} */
+
+/* 
+h2.Coordonnées__titre {
+    font-size: 4vh;
+    margin: 0.4vh 0 0.3vh;
+    border: none;
+} */
+
 /* -----------------MISE EN PAGE SECTION PRO----------------------  */
 
 .Profession {
     width: 60%;
 }
+
+ul {
+    margin-left: 2vh;
+}
+
+
 
 /* --------------------MISE EN PAGE SECTION PASSION---------------- */
 
@@ -203,10 +256,32 @@ img.Passion__Images:hover {
     padding: 1.2vh;
 }
 
+h5.Passion__labo,
+h5.Passion__Perso{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: left;
+    margin-left: 2vh;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 3.8vh;
+}
+
+h5.Passion__Perso {
+    margin-top: 1.3vh;
+}
+
+a.Passion{
+    text-decoration: none;
+}
+
+h2.Passion:hover{
+    color: var(--titre);
+}
+
 a.Passion__Perso,
 a.Passion__labo {
     color: var(--foncé);
-    /* text-decoration: none; */
+    text-decoration: none;
     font-weight: bold;
 }
 
@@ -237,19 +312,14 @@ em.Passion {
     font-style: normal;
 }
 
-
 aside.Passion p {
     font-size: 2.78vh;
     padding: 2vh;
     line-height: 3.2vh;
 }
 
-h5.Passion__Perso {
-    margin-top: 1.3vh;
-}
-
-h5 {
-    text-transform: uppercase;
+div.Passion__labo {
+    margin-bottom: 3vh;
 }
 
 
@@ -267,4 +337,11 @@ h5 {
         width:100%;
         margin: 0;
     }
+}
+
+/* -------------------------------------PAGE CONTACT-------------------------------------*/
+
+div.Présentation__Coordonnées {
+    width: 20vw;
+    margin-left: 5vw;
 }
