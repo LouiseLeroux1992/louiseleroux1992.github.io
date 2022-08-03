@@ -10,10 +10,10 @@
                 <a class="Navigation__Lien" href="quisuisje.php" target="_blank">
                     <li class="Navigation__Item">Qui suis-je ?</li>
                 </a>
-                <a class="Navigation__Lien" href="#Formation">
+                <a class="Navigation__Lien" href="index.php#Formation">
                     <li class="Navigation__Item">Formation</li>
                 </a>
-                <a class="Navigation__Lien" href="#ExperiencePro">
+                <a class="Navigation__Lien" href="index.php#ExperiencePro">
                     <li class="Navigation__Item">Expérience professionnelle</li>
                 </a>
                 <a class="Navigation__Lien" href="artiste.php" target="_blank">

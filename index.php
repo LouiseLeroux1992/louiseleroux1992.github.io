@@ -90,7 +90,7 @@ require_once "./inc/header.tpl.php";
                 <img src="./images/profilepic001.jpg" alt="Dessin de Louise" class="Passion__Images">
             </div>
         </div>
-    </aside>
+</aside>
 </main>
 
 <?php
