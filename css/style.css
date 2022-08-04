@@ -124,6 +124,30 @@ main strong {
     color: var(--foncé);
 }
 
+/* --------------------LIEN CV HTML--------------------------*/
+
+body.lien-cv{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a.lien-cv{
+    text-decoration: none;
+    color: var(--très-foncé);
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: var(--clair);
+    padding: 0.6vh 1.5vh;
+    border: 2px solid var(--très-foncé);
+    border-radius: 3px;
+}
+
+a.lien-cv:hover{
+    background-color: var(--très-foncé);
+    color: var(--background);
+}
+
 /* -----------------MISE EN PAGE HEADER-------------------- */
 
 header.Présentation {
