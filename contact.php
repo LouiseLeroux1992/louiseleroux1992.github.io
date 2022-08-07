@@ -15,16 +15,16 @@ require "./inc/data.php";
 
   <form class="Formulaire" action="" method="post" class="Formulaire-contact">
     <div class="nom">
-      <label placeholder="votre nom" for="name">Nom : </label>
-      <input type="text" name="name" id="name" required>
+      <label for="name">Nom : </label>
+      <input type="text" name="name" placeholder="votre nom" id="name" required>
     </div>
     <div class="email">
-      <label placeholder="adresse@email.fr" for="email">E-mail : </label>
-      <input type="email" name="email" id="email" required>
+      <label for="email">E-mail : </label>
+      <input type="email" name="email"  placeholder="votre adresse e-mail" id="email" required>
     </div>
     <div class="message">
-      <label placeholder="Ecrivez ici votre message" for="message">Message : </label>
-      <textarea type="message" name="message" id="message" cols="70" rows="20" required></textarea>
+      <label for="message">Message : </label>
+      <textarea type="message" name="message" placeholder="Votre message" id="message" cols="70" rows="20" required></textarea>
     </div>
     <div class="bouton">
       <input type="submit" value="Envoyer">

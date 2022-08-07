@@ -5,7 +5,7 @@ require_once "./inc/header.tpl.php";
 
 ?>
 
-<main>
+<main class="index">
 <section class="Profession">
     <div class="Formation-Titre">
         <h3 id="Formation">Formation</h3>
@@ -81,7 +81,7 @@ require_once "./inc/header.tpl.php";
             </p>
         </div>
         <div class="Passion__perso">
-            <h5 class="Passion__Perso">...Et pour le plaisir !</h5>
+            <h5 class="Passion__Perso">...Et Pour le plaisir !</h5>
             <p class="Passion__Perso">
                 Création de bandes-dessinées humoristiques publiées sur mon compte instagram  <a target='_blank' href="https://www.instagram.com/louise.maviepassionnante/?hl=fr" class="Passion__Perso">@louise.maviepassionnante.</a>
             </p>
@@ -89,6 +89,9 @@ require_once "./inc/header.tpl.php";
                 <img src="./images/dessinnc.jpg" alt="Dessin de Louise" class="Passion__Images">
                 <img src="./images/profilepic001.jpg" alt="Dessin de Louise" class="Passion__Images">
             </div>
+        </div>
+        <div class="Passion-plus">
+            <a href="artiste.php" target="_blank" class="Passion__Plus">En savoir plus</a>
         </div>
 </aside>
 </main>

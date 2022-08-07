@@ -73,6 +73,7 @@ h3 {
     font-family: 'Roboto Condensed', sans-serif;
     padding: 0.6vh 2vh;
     text-transform: uppercase;
+    border-radius: 3px;
 }
 
 h5 {
@@ -155,6 +156,7 @@ header.Présentation {
     position: relative;
     padding: 4vh;
     height: 31vh;
+    border-radius: 3px;
 }
 
 img.Présentation__photo {
@@ -163,6 +165,7 @@ img.Présentation__photo {
     position: absolute;
     top: 2vh;
     right: 2vh;
+    border-radius: 3px;
 
 }
 
@@ -199,6 +202,7 @@ h1.Présentation__Nom {
     background-color: var(--clair);
     padding: 0.6vh 1.5vh;
     border: 2px solid var(--très-foncé);
+    border-radius: 3px;
 }
 
 .Navigation__Lien {
@@ -265,10 +269,12 @@ ul {
 /* --------------------MISE EN PAGE SECTION PASSION---------------- */
 
 img.Passion__Images {
-    width: 7rem;
+    width: 9rem;
+    padding: 0;
+    border-radius: 3px;
 }
 
-img.Passion__Images:hover {
+main.index img.Passion__Images:hover {
     transform: scale(3);
     transition-duration: 1.2s;
 }
@@ -293,6 +299,10 @@ h5.Passion__Perso {
     margin-top: 1.3vh;
 }
 
+h5.Passion__labo{
+    margin-top: 0;
+}
+
 a.Passion{
     text-decoration: none;
 }
@@ -302,7 +312,8 @@ h2.Passion:hover{
 }
 
 a.Passion__Perso,
-a.Passion__labo {
+a.Passion__labo,
+a.Passion__Plus {
     color: var(--foncé);
     text-decoration: none;
     font-weight: bold;
@@ -314,12 +325,15 @@ a:hover {
 }
 
 aside.Passion {
+    display: flex;
+    flex-direction: column;
     background-color: var(--clair);
     color: var(--très-foncé);
     width: 30%;
     height: fit-content;
     padding: 3vh;
     border: .5vh solid var(--très-foncé);
+    border-radius: 4px;
 }
 
 h2.Passion {
@@ -339,6 +353,28 @@ aside.Passion p {
     font-size: 2.78vh;
     padding: 2vh;
     line-height: 3.2vh;
+}
+
+.Passion-plus {
+    margin-top: 2vh;
+    align-self: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+a.Passion__Plus {
+    list-style-type:none;
+    color: var(--très-foncé);
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: var(--clair);
+    padding: 0.6vh 1.5vh;
+    border: 2px solid var(--très-foncé);
+    border-radius: 3px;
+}
+
+a.Passion__Plus:hover {
+    background-color: var(--très-foncé);
+    color: var(--background);
 }
 
 div.Passion__labo {
@@ -459,10 +495,81 @@ input[type=submit]:hover {
 }
 
 
-/* ----------------------------------ARTISTE-------------------------------------------------*/
+/* ----------------------------------PAGE ARTISTE-------------------------------------------------*/
 
 main.Passion {
     display: flex;
     flex-direction: column;
     margin: 3vh 2vw;
 }
+
+div.Passion__Labo-images {
+    margin-top : 5vh;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+main.Passion figure {
+    margin: 0;
+}
+
+img.Passion__Labo-images {
+    height: 60vh;
+    border: solid 2px var(--foncé);
+    border-radius: 3px;
+}
+
+main.Passion p.Passion__labo,
+main.Passion p.Passion__Perso {
+    margin: 2vh;
+}
+
+main.Passion h5.Passion__Perso {
+    margin-top: 5vh;
+}
+
+main.Passion div.Passion__Images,
+div.Commissions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main.Passion img.Passion__Images {
+    width: 20vw;
+    padding: 0;
+    border: solid 2px var(--foncé);
+    border-radius: 3px;
+}
+
+div.Commissions {
+    margin-top: 5vh;
+    margin-bottom: 50vh;
+}
+
+p.Commissions {
+    margin-bottom: 5vh;
+    align-self: stretch;
+    width: 100%;
+}
+
+figure {
+    position: relative;
+}
+
+figcaption{
+    display: none;
+}
+/* figcaption {
+    padding: 0.1vh 0.6vh;
+    position: absolute;
+    Bottom: -6vh;
+    right: 1vw;
+    background-color: var(--très-foncé);
+    color: var(--clair);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: smaller;
+    border-top-left-radius: 3px;
+} */
