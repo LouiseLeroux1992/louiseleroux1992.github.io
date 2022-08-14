@@ -10,7 +10,7 @@ require_once "./inc/header.tpl.php";
     <div class="Formation-Titre">
         <h3 id="Formation">Formation</h3>
         <ul class="Profession__Formation">
-            <li class="Formation Dev">2022 : <strong>Développeuse Web et Web mobile</strong>, chez O'Clock.</li>
+            <li class="Formation">2022 : <strong>Développeuse Web et Web mobile</strong>, chez O'Clock.</li>
             <li class="Formation">2015 : obtention du Diplôme d’État d'<strong>Infirmière</strong>.</li>
             <li class="Formation">2012-2015 : Formation au sein de l'IFSI de Caen.</li>
             <li class="Formation">2011-2012 : Classe préparatoire aux concours paramédicaux au lycée Allende à Caen.</li>
@@ -22,7 +22,7 @@ require_once "./inc/header.tpl.php";
     <div class="Profession__Xppro">
         <h3 id="ExperiencePro">Expérience Professionnelle</h3>
         <div class="Xppro__dev">
-            <h4>Développeuse Web</h4>
+            <h4 class="theme">Développeuse Web</h4>
             <ul class="Xppro__dev">
                 <li class="dev">Bases de Html</li>
                 <li class="dev">Bases de CSS</li>

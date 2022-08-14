@@ -1,0 +1,135 @@
+/*-green*/
+body{
+    background-color: var(--green-background);
+    color: var(--green-clair);
+}
+
+h1 {
+    color: var(--green-titre);
+}
+
+h2,
+h4 {
+    color: var(--green-sous-titre);
+}
+
+h3 {
+    background-color: var(--green-titre);
+    color: var(--green-background);
+}
+
+h5,
+main strong {
+    color: var(--green-foncé);
+}
+
+.Présentation__id {
+    color: var(--green-clair);
+}
+
+h2,
+h4 {
+    border-bottom: 0.2vh solid var(--green-sous-titre);
+}
+
+h2.Coordonnées__titre,
+h2.Passion {
+    color: var(--green-très-foncé);
+}
+
+p,
+li {
+    color: var(--green-texte);
+}
+
+header.Présentation {
+    background-color: var(--green-foncé);
+}
+
+img.Présentation__photo {
+    border: 3vh solid var(--green-très-foncé);
+}
+
+.Présentation__Nom {
+    color: var(--green-background);
+}
+
+.Navigation__Item{
+    color: var(--green-très-foncé);
+    background-color: var(--green-clair);
+    border: 2px solid var(--green-très-foncé);
+}
+
+.Navigation__Item:hover {
+    background-color: var(--green-très-foncé);
+    color: var(--green-background);
+}
+
+a.Passion__Perso,
+a.Passion__labo,
+a.Passion__Plus {
+    color: var(--green-foncé);
+}
+
+a:hover {
+    text-shadow: 1px var(--green-titre);
+    color : var(--green-très-foncé);
+}
+
+aside.Passion {
+    background-color: var(--green-clair);
+    color: var(--green-très-foncé);
+    border: .5vh solid var(--green-très-foncé);
+}
+
+a.Passion__Plus {
+    color: var(--green-très-foncé);
+    background-color: var(--green-clair);
+    border: 2px solid var(--green-très-foncé);
+}
+
+a.Passion__Plus:hover {
+    background-color: var(--green-très-foncé);
+    color: var(--green-background);
+}
+
+.nom,
+.email,
+.message {
+    color: var(--green-très-foncé);
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  border: 1px solid var(--green-titre);
+}
+
+input[type=submit] {
+    color: var(--green-très-foncé);
+    background-color: var(--green-clair);
+    border: 2px solid var(--green-très-foncé);
+}
+
+input[type=submit]:hover {
+    background-color: var(--green-très-foncé);
+    color: var(--green-background);
+}
+
+.container {
+  background-color: var(--green-clair);
+}
+
+img.Passion__Labo-images {
+    border: solid 2px var(--green-foncé);
+}
+
+section.Qui__loisirs em,
+section.Qui__historique em {
+    color: var(--green-foncé);
+}
+
+h2.Qui__titre {
+    color: var(--green-très-foncé);
+}

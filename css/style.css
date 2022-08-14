@@ -9,6 +9,7 @@
 
 :root {
     --blanc: #fff;
+
     --background: #daf4ff;
     --titre: #3d5cb2;
     --sous-titre: #0c437c;
@@ -16,13 +17,53 @@
     --clair: #c8dfff;
     --foncé: #082956;
     --très-foncé: #021526;
+
+    --blue-background: #daf4ff;
+    --blue-titre: #3d5cb2;
+    --blue-sous-titre: #0c437c;
+    --blue-texte: #315da5;
+    --blue-clair: #c8dfff;
+    --blue-foncé: #082956;
+    --blue-très-foncé: #021526;
+
+    --red-background: #ffdada;
+    --red-titre: #b23d3d;
+    --red-sous-titre: #7c0c0c;
+    --red-texte: #a53131;
+    --red-clair: #ffc8c8;
+    --red-foncé: #560808;
+    --red-très-foncé: #260202;
+
+    --green-background: #e5ffda;
+    --green-titre: #5eb23d;
+    --green-sous-titre: #377c0c;
+    --green-texte: #54a531;
+    --green-clair: #d8ffc8;
+    --green-foncé: #225608;
+    --green-très-foncé: #0d2602;
+}
+
+/**--------------------------THEMES-------------------------------**/
+
+#red {
+    background-color: var(--red-texte);
+}
+
+#green {
+    background-color:var(--green-texte);
+}
+
+#blue {
+    background-color: var(--blue-texte);
 }
 
 
+/**---------------------------------------------------------------**/
 
 body {
     background-color: var(--background);
-    font-family: 'bitter' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'bitter' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Playfair Display', serif;
     color: var(--clair);
     font-size: 3vh;
     text-align: justify;
@@ -50,11 +91,11 @@ main {
 
 h1 {
     color: var(--titre);
-    
 }
 
-h2.Passion {
-    font-family: 'bitter' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h2.Passion,
+h2.Qui__titre {
+    font-family: 'Playfair Display', serif;
 }
 
 h2,
@@ -99,8 +140,6 @@ h4 {
 }
 
 
-
-
 h2.Coordonnées__titre,
 h2.Passion {
     color: var(--très-foncé);
@@ -115,6 +154,7 @@ p,
 li {
     margin: 0;
     color: var(--texte);
+    font-family: 'Playfair Display', serif;
 }
 
 strong {
@@ -123,6 +163,18 @@ strong {
 
 main strong {
     color: var(--foncé);
+}
+
+li.Formation,
+li.dev,
+li.Ide,
+li.Xpautre__pro,
+li.langues,
+li.divers,
+p.Passion__labo,
+p.Passion__Perso,
+p.Commissions {
+    font-family: 'bitter', serif;
 }
 
 /* --------------------LIEN CV HTML--------------------------*/
@@ -150,6 +202,26 @@ a.lien-cv:hover{
 }
 
 /* -----------------MISE EN PAGE HEADER-------------------- */
+
+/** Boutons **/
+section.theme-btn {
+    display: flex;
+    width: 6em;
+    justify-content: space-between;
+}
+
+button.theme-btn {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/**----------------**/
 
 header.Présentation {
     background-color: var(--foncé);
@@ -184,7 +256,7 @@ h1.Présentation__Nom {
 }
 
 .Navigation{
-    width: 70%;
+    width: 55%;
     position: absolute;
     bottom: 1vh;
     left: 1vh;
@@ -193,6 +265,7 @@ h1.Présentation__Nom {
 .Navigation__Liste{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .Navigation__Item{
@@ -218,41 +291,6 @@ h1.Présentation__Nom {
     color: var(--blanc);
 }
 
-/* section.Présentation {
-    position: absolute;
-    left: 2vw;
-    bottom: 5vh;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    width: 46vw;
-    max-height: 30vh;
-} */
-
-/* .Présentation__id,
-.Présentation__Coordonnées {
-    font-size: 2.5vh;
-    background-color: var(--clair);
-    padding: 0.5vh 1vw;
-    color: var(--très-foncé);
-    width: 40%;
-    height: 10%;
-    border: 0.2vh solid var(--très-foncé);
-} */
-
-/* div.Présentation__id > p,
-div.Présentation__Coordonnées > p {
-    line-height: 2.7vh;
-    text-justify: initial;
-} */
-
-/* 
-h2.Coordonnées__titre {
-    font-size: 4vh;
-    margin: 0.4vh 0 0.3vh;
-    border: none;
-} */
 
 /* -----------------MISE EN PAGE SECTION PRO----------------------  */
 
@@ -262,6 +300,7 @@ h2.Coordonnées__titre {
 
 ul {
     margin-left: 2vh;
+    font-family: 'bitter', serif;
 }
 
 
@@ -307,9 +346,6 @@ a.Passion{
     text-decoration: none;
 }
 
-h2.Passion:hover{
-    color: var(--titre);
-}
 
 a.Passion__Perso,
 a.Passion__labo,
@@ -339,7 +375,7 @@ aside.Passion {
 h2.Passion {
     font-size: 6.5vh;
     border-bottom: none;
-    font-family: initial;
+    font-family: 'Playfair Display', serif;
     line-height: 5.3vh;
     margin-top: 2vh;
 }
@@ -407,6 +443,16 @@ main.contact {
 
 div.Présentation__Coordonnées {
     width: 25vw;
+}
+
+p.Coordonnées__Tel, 
+p.coordonnées__mail {
+    font-family: 'bitter', serif;
+    text-justify: none;
+}
+
+h2.Coordonnées__titre {
+    font-family: 'Playfair Display', serif;;
 }
 
 .Formulaire {
@@ -573,3 +619,34 @@ figcaption{
     font-size: smaller;
     border-top-left-radius: 3px;
 } */
+
+/* ------------------------------------PAGE QUI SUIS JE --------------------------------------------------------*/
+
+main.QuiSuisJe {
+    margin: 3vh 2vw;
+    display: block;
+}
+
+
+p.Historique,
+p.Loisirs {
+    margin-top: 2vh;
+}
+
+section.Qui__loisirs {
+    margin-bottom: 10vh;
+}
+
+section.Qui__loisirs em,
+section.Qui__historique em {
+    font-style: normal;
+    font-weight: bold;
+    color: var(--foncé);
+}
+
+h2.Qui__titre {
+    font-size: 6.5vh;
+    color: var(--très-foncé);
+    border: none;
+}
+
