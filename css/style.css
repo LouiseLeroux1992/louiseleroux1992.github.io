@@ -11,6 +11,14 @@
 :root {
     --blanc: #fff;
 
+    --background: #faf0e6;
+    --titre: #66cdaa;
+    --sous-titre: #a5d971;
+    --texte: #DB7093;
+    --clair: #ffc0cb;
+    --foncé: #6667AB;
+    --très-foncé: #540c54;
+
     --tendance-background: #faf0e6;
     --tendance-titre: #66cdaa;
     --tendance-sous-titre: #a5d971;

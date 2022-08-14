@@ -19,7 +19,9 @@ const theme = {
 
         //récupération du color theme éventuellement sauvegardé dans local storage
         const whatColor = localStorage.getItem('colorTheme');
+        if (whatColor != null) {
         theme.changeColorTheme(whatColor);
+        }
 
         //installation des écouteurs d'événements
         theme.pressedBtns = document.getElementsByClassName('theme-btn');
