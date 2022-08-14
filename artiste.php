@@ -10,7 +10,7 @@ require_once "./inc/header.tpl.php";
         <div class="Passion__labo">
             <h5 class="Passion__labo">En milieu professionnel...</h5>
             <p class="Passion__labo">
-                Durant mes années d'exercice en tant qu'infirmière préleveuse en Laboratoires d'analyses médicales, j'ai eu l'opportunité d'utiliser mes compétences artistiques dans le cadre de plusieurs projets.
+                Durant mes années d'exercice en tant qu'infirmière préleveuse en Laboratoires d'analyses médicales, j'ai eu l'opportunité de mettre à profit mes compétences artistiques dans le cadre de plusieurs projets.
             </p>
             <p class="Passion__labo">
                 J'ai notamment créé une <a target='_blank' href="https://caledobio.nc/wp-content/uploads/2020/09/1445_C2-ENR-005-01_Ma_premiere_prise_de_sang_chez_.pdf" class="Passion__labo">bande-dessinée pédagogique</a> à destination des enfants, expliquant l'intérêt et le déroulement d'une prise de sang. Cette bande-dessinée est disponible dans chaque laboratoire du groupement Calédobio en version plastifiée, mise à disposition de l'accompagnant lors de l'enregistrement du dossier de l'enfant à l'accueil. On peut également y accéder sur le site internet des laboratoires Calédobio.

@@ -24,9 +24,10 @@ require_once "./inc/header.tpl.php";
         <div class="Xppro__dev">
             <h4 class="theme">Développeuse Web</h4>
             <ul class="Xppro__dev">
-                <li class="dev">Bases de Html</li>
-                <li class="dev">Bases de CSS</li>
-                <li class="dev">Bases de PHP</li>
+                <li class="dev">Html</li>
+                <li class="dev">CSS</li>
+                <li class="dev">PHP</li>
+                <li class="dev">JS</li>
             </ul>
         </div>
         <div class="Xppro__Ide">
@@ -66,7 +67,7 @@ require_once "./inc/header.tpl.php";
         <h4 class="divers">Expériences diverses</h4>
             <ul class="divers">
                 <li class="divers">Au lycée, élue au CVL (Conseil de la Vie Lycéenne) et au CAVL ( Conseil Académique de la Vie Lycéenne), déléguée de promotion à l'IFSI de Caen puis à O'Clock.</li>
-                <li class="divers">Participations en tant qu'intervenante bénévole aux journées mondiales de la contraception et de la lutte contre le SIDA.</li>
+                <li class="divers">Participation en tant qu'intervenante bénévole aux journées mondiales de la contraception et de la lutte contre le SIDA.</li>
                 <li class="divers">Titulaire du permis de conduire B.</li>
                 <li class="divers">Titulaire du PSC1 (2011), de l'AFGSU (2014) et du SST (2020).</li>
             </ul>

@@ -19,4 +19,5 @@
     <link id="theme" rel="stylesheet" href="">
     <script src="js/theme.js" defer></script>
     <title>Louise LEROUX</title>
+    <link rel="icon" href="images/dessinnc.jpg" sizes="any">
 </head>
