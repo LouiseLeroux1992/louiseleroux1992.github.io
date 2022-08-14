@@ -73,7 +73,7 @@ require_once "./inc/header.tpl.php";
     </section>
 </section>
 <aside class="Passion">
-    <a target='_blank' href="artiste.php" class="Passion"><h2 class="Passion">Dessin <em class="Passion">et</em> <br>Bande-Dessinée</h2></a>
+    <a href="artiste.php" class="Passion"><h2 class="Passion">Dessin <em class="Passion">et</em> <br>Bande-Dessinée</h2></a>
         <div class="Passion__labo">
             <h5 class="Passion__labo">En milieu professionnel...</h5>
             <p class="Passion__labo">

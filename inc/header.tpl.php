@@ -5,6 +5,7 @@
         <button class="theme-btn" id="red"></button>
         <button class="theme-btn" id="green"></button>
         <button class="theme-btn" id="blue"></button>
+        <button class="theme-btn" id="tendance"></button>
     </section>
     <section class="Présentation">
         <a href="index.php" class="Nom-lien"><h1 class="Présentation__Nom">Leroux Louise</h1></a>

@@ -7,16 +7,17 @@
     --très-foncé: #031226;
 } */
 
+
 :root {
     --blanc: #fff;
 
-    --background: #daf4ff;
-    --titre: #3d5cb2;
-    --sous-titre: #0c437c;
-    --texte: #315da5;
-    --clair: #c8dfff;
-    --foncé: #082956;
-    --très-foncé: #021526;
+    --tendance-background: #faf0e6;
+    --tendance-titre: #66cdaa;
+    --tendance-sous-titre: #a5d971;
+    --tendance-texte: #DB7093;
+    --tendance-clair: #ffc0cb;
+    --tendance-foncé: #6667AB;
+    --tendance-très-foncé: #540c54;
 
     --blue-background: #daf4ff;
     --blue-titre: #3d5cb2;
@@ -57,6 +58,9 @@
     background-color: var(--blue-texte);
 }
 
+#tendance {
+    background-color: var(--tendance-texte);
+}
 
 /**---------------------------------------------------------------**/
 

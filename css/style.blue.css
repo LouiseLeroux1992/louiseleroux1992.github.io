@@ -93,6 +93,10 @@ a.Passion__Plus:hover {
     color: var(--blue-background);
 }
 
+main.Passion img.Passion__Images {
+    border: solid 2px var(--blue-foncé);
+}
+
 .nom,
 .email,
 .message {
