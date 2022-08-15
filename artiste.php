@@ -6,7 +6,7 @@ require_once "./inc/header.tpl.php";
 ?>
 
 <main class="Passion">
-    <h2 class="Passion">Dessin <em class="Passion">et </em>Bande-Dessinée</h2>
+    <h2 class="Passion">Dessin <em class="Passion">et<br></em>Bande-Dessinée</h2>
         <div class="Passion__labo">
             <h5 class="Passion__labo">En milieu professionnel...</h5>
             <p class="Passion__labo">

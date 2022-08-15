@@ -704,7 +704,7 @@ h2.Qui__titre {
     main.QuiSuisJe {
         margin-left: 0;
     }
-    
+
     header.Présentation {
         height: 40vh;
         width: 100%;
@@ -763,7 +763,6 @@ h2.Qui__titre {
         width: auto;
     }
 
-
     ul.Profession__Formation,
     ul.Xppro__dev,
     ul.Xppro__Ide,
@@ -772,7 +771,8 @@ h2.Qui__titre {
     ul.divers,
     p.Historique,
     h2.Qui__titre,
-    p.Loisirs {
+    p.Loisirs,
+    p.Commissions {
         padding-right: 4vw;
         padding-left: 5vw;
     }
@@ -795,6 +795,21 @@ h2.Qui__titre {
         flex-direction: column;
     }
 
+    div.Passion__Labo-images {
+        display: block;
+    }
+
+    img.Passion__Labo-images,
+    figure > img.Passion__Images {
+        width: 80%;
+        height: auto;
+        margin: 1vh 0vh 0vh 0vh;
+        display: block;
+    }
+
+    div.Passion__Images {
+        width: auto;
+    }
 }
 
  
