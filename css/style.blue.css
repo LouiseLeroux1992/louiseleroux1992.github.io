@@ -29,7 +29,7 @@ main strong {
 
 h2,
 h4 {
-    border-bottom: 0.2vh solid var(--blue-sous-titre);
+    border-bottom-color: var(--blue-sous-titre);
 }
 
 h2.Coordonnées__titre,
@@ -47,7 +47,7 @@ header.Présentation {
 }
 
 img.Présentation__photo {
-    border: 3vh solid var(--blue-très-foncé);
+    border-color: var(--blue-très-foncé);
 }
 
 .Présentation__Nom {
@@ -57,7 +57,7 @@ img.Présentation__photo {
 .Navigation__Item{
     color: var(--blue-très-foncé);
     background-color: var(--blue-clair);
-    border: 2px solid var(--blue-très-foncé);
+    border-color: var(--blue-très-foncé);
 }
 
 .Navigation__Item:hover {
@@ -79,13 +79,13 @@ a:hover {
 aside.Passion {
     background-color: var(--blue-clair);
     color: var(--blue-très-foncé);
-    border: .5vh solid var(--blue-très-foncé);
+    border-color: var(--blue-très-foncé);
 }
 
 a.Passion__Plus {
     color: var(--blue-très-foncé);
     background-color: var(--blue-clair);
-    border: 2px solid var(--blue-très-foncé);
+    border-color: var(--blue-très-foncé);
 }
 
 a.Passion__Plus:hover {
@@ -94,7 +94,7 @@ a.Passion__Plus:hover {
 }
 
 main.Passion img.Passion__Images {
-    border: solid 2px var(--blue-foncé);
+    border-color: var(--blue-foncé);
 }
 
 .nom,
@@ -107,13 +107,13 @@ input[type=text],
 input[type=email],
 select,
 textarea {
-  border: 1px solid var(--blue-titre);
+  border-color: var(--blue-titre);
 }
 
 input[type=submit] {
     color: var(--blue-très-foncé);
     background-color: var(--blue-clair);
-    border: 2px solid var(--blue-très-foncé);
+    border-color: var(--blue-très-foncé);
 }
 
 input[type=submit]:hover {
@@ -126,7 +126,7 @@ input[type=submit]:hover {
 }
 
 img.Passion__Labo-images {
-    border: solid 2px var(--blue-foncé);
+    border-color: var(--blue-foncé);
 }
 
 section.Qui__loisirs em,

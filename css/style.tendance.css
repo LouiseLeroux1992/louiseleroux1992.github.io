@@ -29,7 +29,7 @@ main strong {
 
 h2,
 h4 {
-    border-bottom: 0.2vh solid var(--tendance-sous-titre);
+    border-bottom-color: var(--tendance-sous-titre);
 }
 
 h2.Coordonnées__titre,
@@ -47,7 +47,7 @@ header.Présentation {
 }
 
 img.Présentation__photo {
-    border: 3vh solid var(--tendance-très-foncé);
+    border-color: var(--tendance-très-foncé);
 }
 
 .Présentation__Nom {
@@ -57,7 +57,7 @@ img.Présentation__photo {
 .Navigation__Item{
     color: var(--tendance-très-foncé);
     background-color: var(--tendance-clair);
-    border: 2px solid var(--tendance-très-foncé);
+    border-color: var(--tendance-très-foncé);
 }
 
 .Navigation__Item:hover {
@@ -68,7 +68,7 @@ img.Présentation__photo {
 a.Passion__Perso,
 a.Passion__labo,
 a.Passion__Plus {
-    color: var(--tendance-foncé);
+    color: var(--tendance-titre);
 }
 
 a:hover {
@@ -79,13 +79,13 @@ a:hover {
 aside.Passion {
     background-color: var(--tendance-clair);
     color: var(--tendance-très-foncé);
-    border: .5vh solid var(--tendance-très-foncé);
+    border-color: var(--tendance-très-foncé);
 }
 
 a.Passion__Plus {
     color: var(--tendance-très-foncé);
     background-color: var(--tendance-clair);
-    border: 2px solid var(--tendance-très-foncé);
+    border-color: var(--tendance-très-foncé);
 }
 
 a.Passion__Plus:hover {
@@ -94,7 +94,7 @@ a.Passion__Plus:hover {
 }
 
 main.Passion img.Passion__Images {
-    border: solid 2px var(--tendance-foncé);
+    border-color: var(--tendance-foncé);
 }
 
 .nom,
@@ -107,13 +107,13 @@ input[type=text],
 input[type=email],
 select,
 textarea {
-  border: 1px solid var(--tendance-titre);
+  border-color: var(--tendance-titre);
 }
 
 input[type=submit] {
     color: var(--tendance-très-foncé);
     background-color: var(--tendance-clair);
-    border: 2px solid var(--tendance-très-foncé);
+    border-color: var(--tendance-très-foncé);
 }
 
 input[type=submit]:hover {
@@ -126,7 +126,7 @@ input[type=submit]:hover {
 }
 
 img.Passion__Labo-images {
-    border: solid 2px var(--tendance-foncé);
+    border-color: var(--tendance-foncé);
 }
 
 section.Qui__loisirs em,

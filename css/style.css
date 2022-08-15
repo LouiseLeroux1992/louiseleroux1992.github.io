@@ -189,29 +189,11 @@ p.Commissions {
     font-family: 'bitter', serif;
 }
 
-/* --------------------LIEN CV HTML--------------------------*/
-
-body.lien-cv{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+a.Passion__labo,
+a.Passion__Perso {
+    color: var(--titre);
 }
 
-a.lien-cv{
-    text-decoration: none;
-    color: var(--très-foncé);
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: var(--clair);
-    padding: 0.6vh 1.5vh;
-    border: 2px solid var(--très-foncé);
-    border-radius: 3px;
-}
-
-a.lien-cv:hover{
-    background-color: var(--très-foncé);
-    color: var(--background);
-}
 
 /* -----------------MISE EN PAGE HEADER-------------------- */
 
@@ -362,7 +344,7 @@ a.Passion{
 a.Passion__Perso,
 a.Passion__labo,
 a.Passion__Plus {
-    color: var(--foncé);
+    color: var(--titre);
     text-decoration: none;
     font-weight: bold;
 }
@@ -427,23 +409,6 @@ a.Passion__Plus:hover {
 
 div.Passion__labo {
     margin-bottom: 3vh;
-}
-
-
-/* --------------------RESPONSIVE---------------------- */
-
-@media (max-width: 1250px) {
-    main {
-        display: block;
-    }
-    .Profession {
-        width:100%;
-        margin: 0;
-    }
-    aside.Passion {
-        width:100%;
-        margin: 0;
-    }
 }
 
 /* -------------------------------------PAGE CONTACT-------------------------------------*/
@@ -662,3 +627,173 @@ h2.Qui__titre {
     border: none;
 }
 
+/* --------------------RESPONSIVE---------------------- */
+
+@media (max-width: 1250px) {
+    main {
+        display: block;
+        font-size: 2vh;
+    }
+    .Profession {
+        width:100%;
+        margin: 0;
+    }
+    aside.Passion {
+        width:100%;
+        margin: 0;
+    }
+
+    header.Présentation {
+        height: 20vh;
+    }
+
+    button.theme-btn {
+        width: 3.5vh;
+        height: 3.5vh; 
+    }
+
+    h1.Présentation__Nom {
+        font-size: 6vh;
+    }
+
+    ul.Navigation__Liste {
+        width: 50vw;
+    }
+
+    li.Navigation__Item {
+        font-size: 2.2vh;
+    }
+
+    img.Présentation__photo {
+        height: 15vh;
+        width: 15.5vh;
+        border: 2.5vh solid var(--très-foncé);
+    }
+
+    .Formulaire {
+        width: 40vw;
+    }
+
+}
+
+@media (max-width: 900px) {
+    main {
+        font-size: 3vh;
+    }
+}
+
+@media (max-width: 550px) {
+
+    body {
+        margin: 0;
+        width: 100vw;
+    }
+
+    div.content {
+        margin: 0;
+        width: 100vw;
+    }
+
+    main {
+        font-size: 2.5vh;
+        margin:auto;
+        width: 100vw;
+        line-height: 3.3vh;
+    }
+    
+    main.QuiSuisJe {
+        margin-left: 0;
+    }
+    header.Présentation {
+        height: 40vh;
+        width: 100%;
+        margin: auto;
+    }
+
+    section.Présentation,
+    main.Passion div.Passion__labo,
+    main.Passion div.Passion__perso,
+    div.Passion__Labo-images,
+    div.Passion__Images {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 2vw;
+    }
+
+    h1.Présentation__Nom {
+        position: unset;
+        font-size: 5vh;
+        margin:0;
+        text-decoration: none;
+    }
+    nav.Navigation {
+        position: unset;
+        display: block;
+        align-self: center;
+    }
+
+    a.Nom-lien {
+        text-decoration: none;
+    }
+
+    img.Présentation__photo {
+    top: 4vh;
+    right: 5vw;
+    width: 15vw;
+    height: 15vw;
+    border: 2vw solid var(--très-foncé);
+    }
+
+    ul.Navigation__Liste{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 0;
+       margin: 2vh 0;
+    }
+
+    section.Profession,
+    aside.Passion
+    section.Qui__historique,
+    section.Qui__loisirs,
+    h3.Historique__titre,
+    h3.Loisirs__titre {
+        width: auto;
+    }
+
+
+    ul.Profession__Formation,
+    ul.Xppro__dev,
+    ul.Xppro__Ide,
+    ul.Xpautre__pro
+    ul.compétences__langues,
+    ul.divers,
+    p.Historique,
+    h2.Qui__titre,
+    p.Loisirs {
+        padding-right: 4vw;
+        padding-left: 5vw;
+    }
+
+    h2.Passion,
+    em.Passion,
+    h2.Qui__titre {
+        font-size: 4vh;
+    }
+
+    aside.Passion p {
+        font-size: 2vh;
+    }
+
+    img.Passion__Images {
+        width: 35%;
+    }
+
+    div.Commissions {
+        flex-direction: column;
+    }
+
+}
+
+ 
