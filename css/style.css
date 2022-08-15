@@ -704,6 +704,7 @@ h2.Qui__titre {
     main.QuiSuisJe {
         margin-left: 0;
     }
+    
     header.Présentation {
         height: 40vh;
         width: 100%;
@@ -713,8 +714,8 @@ h2.Qui__titre {
     section.Présentation,
     main.Passion div.Passion__labo,
     main.Passion div.Passion__perso,
-    div.Passion__Labo-images,
-    div.Passion__Images {
+    main.Passion div.Passion__Labo-images,
+    main.Passion div.Passion__Images { 
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -754,7 +755,7 @@ h2.Qui__titre {
     }
 
     section.Profession,
-    aside.Passion
+    aside.Passion,
     section.Qui__historique,
     section.Qui__loisirs,
     h3.Historique__titre,
@@ -766,7 +767,7 @@ h2.Qui__titre {
     ul.Profession__Formation,
     ul.Xppro__dev,
     ul.Xppro__Ide,
-    ul.Xpautre__pro
+    ul.Xpautre__pro,
     ul.compétences__langues,
     ul.divers,
     p.Historique,
